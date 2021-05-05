@@ -1,0 +1,90 @@
+{
+  "Profile": [
+    {
+      "image": "./images/y.jpg",
+      "name": "Aunnop  Chatkhamchucharoen",
+      "Sid": "62130500104",
+      "work": "Databases"
+    },
+    {
+      "image": "./images/b.jpg",
+      "name": "Thitikorn  Panyawachirayan",
+      "Sid": "62130500112",
+      "work": "Frontend"
+    },
+    {
+      "image": "./images/w.jpg",
+      "name": "Athipat  Pingwong",
+      "Sid": "62130500132",
+      "work": "Backend"
+    }
+  ],
+  "Product": [
+    {
+      "image": "./y.jpg",
+        "id":1,
+        "name":"phone",
+        "price":10000,
+        "date":"28-4-2021",
+        "color":"red",
+        "brand":"samsung",
+        "description":""
+    },{
+      "image": "./y.jpg",
+        "id":2,
+        "name":"phone",
+        "price":10000,
+        "date":"28-4-2021",
+        "color":"red",
+        "brand":"samsung",
+        "description":""
+    },{
+      "image": "./y.jpg",
+        "id":3,
+        "name":"phone",
+        "price":10000,
+        "date":"28-4-2021",
+        "color":"red",
+        "brand":"samsung",
+        "description":""
+    },{
+      "image": "./y.jpg",
+        "id":4,
+        "name":"phone",
+        "price":10000,
+        "date":"28-4-2021",
+        "color":"red",
+        "brand":"samsung",
+        "description":""
+    }
+
+  ],
+  "colorList": [
+    {
+      "id": 1,
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "color": "blue"
+    },
+    {
+      "id": 3,
+      "color": "white"
+    }
+  ],
+  "brand_list": [
+    {
+      "id": 1,
+      "brand": "samsung"
+    },
+    {
+      "id": 2,
+      "brand": "vivo"
+    },
+    {
+      "id": 3,
+      "brand": "xiaomi"
+    }
+  ]
+}
