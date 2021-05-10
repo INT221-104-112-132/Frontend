@@ -114,7 +114,7 @@ export default {
 
     async getColorList() {
       try {
-        const res = await fetch('http://localhost:5000/colorList')
+        const res = await fetch('http://104.215.187.12:3000/color')
         const data = await res.json()
         return data
       }catch (error) {
@@ -124,7 +124,7 @@ export default {
 
     async getBrandList() {
       try {
-        const res = await fetch('http://localhost:5000/brand_list')
+        const res = await fetch('http://104.215.187.12:3000/brand')
         const data = await res.json()
         return data
       } catch (error) {
@@ -136,7 +136,7 @@ export default {
       this.error = cf();
       if(!this.error[0]){
         try{ 
-          await fetch('http://localhost:5000/Product',{
+          await fetch('http://localhost:5000/product/addproduct',{
             method: 'POST',
             headers: { 'content-type': 'application/json'},
             body: JSON.stringify({

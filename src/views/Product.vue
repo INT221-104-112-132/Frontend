@@ -81,7 +81,7 @@ export default {
   },
 
   methods: {
-    
+
     clear(){
       this.inputTask = ''
     },
@@ -108,7 +108,7 @@ export default {
       else{
         if(confirm(`Are you srue to delete product name ${name}`)){
           try{
-            await fetch(`http://localhost:5000/Product/${id}`,{
+            await fetch(`http://localhost:5000/product/delete/${id}`,{
               method: 'DELETE'
             })
             this.product = this.product.filter(product => product.id !== id)
@@ -122,7 +122,7 @@ export default {
 
     async getProduct() {
       try {
-        const res = await fetch('http://localhost:5000/Product' )
+        const res = await fetch('http://104.215.187.12:3000/product' )
         const data = await res.json()
         return data
       } catch (error) {
@@ -132,7 +132,7 @@ export default {
 
     async getColorList() {
       try {
-        const res = await fetch('http://localhost:5000/colorList')
+        const res = await fetch('http://104.215.187.12:3000/color')
         const data = await res.json()
         return data
       } catch (error) {
@@ -142,7 +142,7 @@ export default {
 
     async getBrandList() {
       try {
-        const res = await fetch('http://localhost:5000/brand_list')
+        const res = await fetch('http://104.215.187.12:3000/brand')
         const data = await res.json()
         return data
       } catch (error) {
