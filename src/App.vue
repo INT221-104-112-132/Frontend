@@ -1,154 +1,58 @@
 <template>
-  <div class="sticky z-50 top-0 mb-2">
+  <div class="fixed z-50 w-full">
 
-  <div class="bg-black ">
-       <button class='text-white  p-4 transition duration-500 ease-in-out  hover:bg-white hover:text-black ' v-on:click='displayGallery'>Gallery</button>
-       <button class='text-white  p-4 transition duration-500 ease-in-out  hover:bg-white hover:text-black ' v-on:click='displayProfile'>Profile</button>
+  <div class="bg-black p-4">
+
+       <router-link to="/product"     class='bar' >Product</router-link>
+       <router-link to="/team"        class='bar ' >Profile</router-link>
+       <router-link to="/Add_Product" class='bar ' >Add Product</router-link>
 
   </div>
 </div>
+<div class="pt-20">
+<router-view ></router-view>
+</div>
 
-  <div v-show ='showProfile'><profile :member="member"></profile></div>
-  <div v-show ='showGallery'><product @delete="deleteProduct" :product="product" :colorList="color_list" :brandList="brandList"></product></div>
  
-  <button @click="check">check</button>
+ 
+<!-- <button @click="check">check</button> -->
+
+<!-- <span>For test <span class="bg-productColor-2 border-1 py-1 px-4"></span> </span> -->
+
+
 </template>
 
 <script>
-import product from './components/Product.vue'
-import profile from './components/Profile.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    product,
-    profile
-  },
+
   data(){
     return{
       url:'http://localhost:5000',
       showGallery: true,
       showProfile: false,
+      showEdit:false,
+      toEdit:[],
       newData:[],
       member:[],
       product:[],
       colorList:[],
-      brandList:[]
+      brandList:[],
     }
   },
 
   methods: {
-    displayProfile(){
-      this.showGallery = false;
-      this.showProfile = true;
-
-      },
-    displayGallery(){
-      this.showGallery = true;
-      this.showProfile = false;
-    },
     check(){
-    
-      alert(this.product)
-     
+        alert(this.colorList)
     },
 
-    async deleteProduct(id){
-      try{
-        alert(id)
-        await fetch(`http://localhost:5000/Product/${id}`,{
-          method: 'DELETE'
-        })
-        this.product = this.product.filter(product => product.id !== id)
-
-      }catch(error){
-        alert(error)
-      }
-
-
-    },
-  
-
-      async addProduct(){
-        try{
-        const res = await fetch(this.url,{
-          method: 'POST',
-          headers: { 'content-type': 'application/json'},
-          body: JSON.stingify({
-            image: 'src/components/w.jpg',
-            code:'',
-            name:'',
-            description:'',
-            price:'',
-            date:'',
-            brand:'',
-            color:''
-          })
-
-        })
-
-        const data = await res.JSON()
-        this.newData=[...this.newData , data]
-        }
-
-        catch(error){
-          alert(error);
-        }
-      },
-
-
-      async getProduct() {
-        try {
-          const res = await fetch('http://localhost:5000/Product' )
-          const data = await res.json()
-          return data
-        } catch (error) {
-            console.log(error)
-        }
-      },
-       async getProfile() {
-        try {
-          const res = await fetch('http://localhost:5000/Profile')
-          const data = await res.json()
-          return data
-          
-        } catch (error) {
-          return error
-        }
-      },
-       async getColorList() {
-        try {
-          const res = await fetch('http://localhost:5000/colorList')
-          const data = await res.json()
-          return data
-        } catch (error) {
-            console.log(error)
-        }
-      },
-       async getBrandList() {
-        try {
-          const res = await fetch('http://localhost:5000/brand_list')
-          const data = await res.json()
-          return data
-        } catch (error) {
-            console.log(error)
-        }
-      }
-
-
-  },
-
-  async created() {
-        this.member = await this.getProfile()
-        this.product = await this.getProduct()
-        this.colorList = await this.getColorList()
-        this.brandList = await this.getBrandList()
   }
+
 }
 </script>
 
 <style>
-#app {
- 
-}
+
 </style>

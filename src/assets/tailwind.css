@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.bar {
+    @apply text-white p-4 transition duration-500 ease-in-out  hover:bg-white hover:text-black ;
+}

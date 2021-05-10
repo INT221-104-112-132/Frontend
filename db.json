@@ -1,76 +1,107 @@
 {
-  "Profile": [
-    {
-      "image": "./images/y.jpg",
-      "name": "Aunnop  Chatkhamchucharoen",
-      "Sid": "62130500104",
-      "work": "Databases"
-    },
-    {
-      "image": "./images/b.jpg",
-      "name": "Thitikorn  Panyawachirayan",
-      "Sid": "62130500112",
-      "work": "Frontend"
-    },
-    {
-      "image": "./images/w.jpg",
-      "name": "Athipat  Pingwong",
-      "Sid": "62130500132",
-      "work": "Backend"
-    }
-  ],
   "Product": [
     {
-      "image": "./y.jpg",
-        "id":1,
-        "name":"phone",
-        "price":10000,
-        "date":"28-4-2021",
-        "color":"red",
-        "brand":"samsung",
-        "description":""
-    },{
-      "image": "./y.jpg",
-        "id":2,
-        "name":"phone",
-        "price":10000,
-        "date":"28-4-2021",
-        "color":"red",
-        "brand":"samsung",
-        "description":""
-    },{
-      "image": "./y.jpg",
-        "id":3,
-        "name":"phone",
-        "price":10000,
-        "date":"28-4-2021",
-        "color":"red",
-        "brand":"samsung",
-        "description":""
-    },{
-      "image": "./y.jpg",
-        "id":4,
-        "name":"phone",
-        "price":10000,
-        "date":"28-4-2021",
-        "color":"red",
-        "brand":"samsung",
-        "description":""
+      "image": {},
+      "name": "fgdfghdh",
+      "description": "rwetgghehr",
+      "price": "12323",
+      "date": "2021-05-12",
+      "brand": "vivo",
+      "color": [
+        {
+          "id": 1,
+          "color": "white"
+        },
+        {
+          "id": 2,
+          "color": "black"
+        },
+        {
+          "id": 4,
+          "color": "blue"
+        },
+        {
+          "id": 7,
+          "color": "orange"
+        },
+        {
+          "id": 8,
+          "color": "gold"
+        },
+        {
+          "id": 9,
+          "color": "silver"
+        },
+        {
+          "id": 10,
+          "color": "gray"
+        },
+        {
+          "id": 6,
+          "color": "green"
+        },
+        {
+          "id": 5,
+          "color": "yellow"
+        },
+        {
+          "id": 3,
+          "color": "red"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "image": {},
+      "name": "",
+      "description": "",
+      "price": "",
+      "date": "",
+      "brand": "",
+      "color": [],
+      "id": 2
     }
-
   ],
   "colorList": [
     {
       "id": 1,
-      "color": "red"
+      "color": "white"
     },
     {
       "id": 2,
-      "color": "blue"
+      "color": "black"
     },
     {
       "id": 3,
-      "color": "white"
+      "color": "red"
+    },
+    {
+      "id": 4,
+      "color": "blue"
+    },
+    {
+      "id": 5,
+      "color": "yellow"
+    },
+    {
+      "id": 6,
+      "color": "green"
+    },
+    {
+      "id": 7,
+      "color": "orange"
+    },
+    {
+      "id": 8,
+      "color": "gold"
+    },
+    {
+      "id": 9,
+      "color": "silver"
+    },
+    {
+      "id": 10,
+      "color": "gray"
     }
   ],
   "brand_list": [
