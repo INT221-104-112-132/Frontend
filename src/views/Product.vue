@@ -108,7 +108,7 @@ export default {
       else{
         if(confirm(`Are you srue to delete product name ${name}`)){
           try{
-            await fetch(`http://localhost:5000/product/delete/${id}`,{
+            await fetch(`http://104.215.187.12:3000/product/delete/${id}`,{
               method: 'DELETE'
             })
             this.product = this.product.filter(product => product.id !== id)

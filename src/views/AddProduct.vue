@@ -136,7 +136,7 @@ export default {
       this.error = cf();
       if(!this.error[0]){
         try{ 
-          await fetch('http://localhost:5000/product/addproduct',{
+          await fetch('http://104.215.187.12:3000/product/addproduct',{
             method: 'POST',
             headers: { 'content-type': 'application/json'},
             body: JSON.stringify({

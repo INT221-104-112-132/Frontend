@@ -134,7 +134,7 @@ export default {
       this.error = cf();
       if(!this.error[0]){
         try{
-          await fetch(`http://localhost:5000/product/edit/${this.id}`,{
+          await fetch(`http://104.215.187.12:3000/product/edit/${this.id}`,{
             method: 'PUT',
           headers: { 'content-type': 'application/json'},
           body: JSON.stringify({
