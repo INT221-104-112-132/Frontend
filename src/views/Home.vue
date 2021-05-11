@@ -6,7 +6,6 @@
       <p class='text-center'>INT221 Integrated Project</p>
       <p class='text-center'>G.5 Advisor Aj Umaporn Supasitthimethee </p>
       <p class='text-center'>Semester 2 Year 2</p>
-      <p class='text-center mt-80 text-xs'>Deadline not come. Work not progress</p>
     </div>
   </div>  
 </div>
