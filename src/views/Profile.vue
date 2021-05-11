@@ -24,7 +24,7 @@ export default {
           image: "104.jpg",
           name: "Aunnop  Chatkhamchucharoen",
           Sid: "62130500104",
-          work: "Databases , Docker"
+          work: "Databases"
         },
         {
           image: "112.jpg",

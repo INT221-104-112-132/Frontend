@@ -2,11 +2,11 @@
   "Product": [
     {
       "image": {},
-      "name": "fgdfghdh",
-      "description": "aaa",
-      "price": "12323",
-      "date": "2021-05-12",
-      "brand": "vivo",
+      "name": "Samsung S10",
+      "description": "Samsung S10",
+      "price": "15000",
+      "date": "2021-03-13",
+      "brand": "samsung",
       "color": [
         {
           "id": 1,
@@ -17,48 +17,33 @@
           "color": "black"
         },
         {
-          "id": 4,
-          "color": "blue"
-        },
-        {
-          "id": 7,
-          "color": "orange"
-        },
-        {
-          "id": 8,
-          "color": "gold"
-        },
-        {
           "id": 9,
           "color": "silver"
-        },
-        {
-          "id": 10,
-          "color": "gray"
-        },
-        {
-          "id": 6,
-          "color": "green"
-        },
-        {
-          "id": 5,
-          "color": "yellow"
-        },
-        {
-          "id": 3,
-          "color": "red"
         }
       ],
       "id": 1
     },
     {
       "image": {},
-      "name": "",
-      "description": "",
-      "price": "",
-      "date": "",
-      "brand": "",
-      "color": [],
+      "name": "Vivo v20",
+      "description": "Vivo v20",
+      "price": "12000",
+      "date": "2021-01-11",
+      "brand": "vivo",
+      "color": [
+        {
+          "id": 3,
+          "color": "red"
+        },
+        {
+          "id": 4,
+          "color": "blue"
+        },
+        {
+          "id": 10,
+          "color": "gray"
+        }
+      ],
       "id": 2
     },
     {
